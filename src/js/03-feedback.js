@@ -11,7 +11,7 @@ const { email, message } = form.elements;
 reloadPage();
 
 function onInputData(e) {
-  formObjectValue = { email: email.value, message: message.value };
+  const formObjectValue = { email: email.value, message: message.value };
   localStorage.setItem(LOCAL_KEY, JSON.stringify(formObjectValue));
 }
 
